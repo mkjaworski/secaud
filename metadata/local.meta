@@ -1,0 +1,206 @@
+[macros/casevents]
+version = 6.1.9
+modtime = 1447368297.198436000
+
+[macros/casproxyevents]
+version = 6.1.9
+modtime = 1447368297.201506000
+
+[macros/modsecevents]
+version = 6.1.9
+modtime = 1447368297.203352000
+
+[macros/scope_all]
+version = 6.1.9
+modtime = 1447368297.205205000
+
+[macros/scope_external]
+version = 6.1.9
+modtime = 1447368297.206974000
+
+[macros/scope_internal]
+version = 6.1.9
+modtime = 1447368297.208795000
+
+[app/install/is_configured]
+version = 6.1.9
+modtime = 1447368297.214827000
+
+[transforms/service_lookup]
+access = read : [ * ], write : [ admin, power ]
+export = none
+owner = nobody
+version = 6.0.2
+modtime = 1395845742.816952000
+
+[lookups/service_lookup.csv]
+access = read : [ * ], write : [ admin, power ]
+export = none
+owner = nobody
+version = 6.0.2
+modtime = 1395845815.695331000
+
+[props/cas/EXTRACT-grantee]
+access = read : [ * ], write : [ admin, power ]
+export = none
+owner = nobody
+version = 6.0.2
+modtime = 1395845862.884985000
+
+[props/cas/EXTRACT-service]
+access = read : [ * ], write : [ admin, power ]
+export = none
+owner = nobody
+version = 6.2.0
+modtime = 1416167612.324568000
+
+[props/cas/EXTRACT-service_ticket]
+access = read : [ * ], write : [ admin, power ]
+export = none
+owner = nobody
+version = 6.0.2
+modtime = 1395845873.128533000
+
+[props/cas/EXTRACT-username]
+access = read : [ * ], write : [ admin, power ]
+export = none
+owner = nobody
+version = 6.0.2
+modtime = 1395845877.190810000
+
+[props/cas/REPORT-kv]
+access = read : [ * ], write : [ admin, power ]
+export = none
+owner = nobody
+version = 6.0.2
+modtime = 1395845882.803463000
+
+[props/cas_proxy/EXTRACT-clientip]
+access = read : [ * ], write : [ admin, power ]
+export = none
+owner = nobody
+version = 6.0.2
+modtime = 1395845887.157235000
+
+[props/cas_proxy/EXTRACT-referer]
+access = read : [ * ], write : [ admin, power ]
+export = none
+owner = nobody
+version = 6.0.2
+modtime = 1395845891.559730000
+
+[props/cas_proxy/EXTRACT-request]
+access = read : [ * ], write : [ admin, power ]
+export = none
+owner = nobody
+version = 6.0.2
+modtime = 1395845898.856911000
+
+[props/cas_proxy/EXTRACT-request_type]
+access = read : [ * ], write : [ admin, power ]
+export = none
+owner = nobody
+version = 6.0.2
+modtime = 1395845903.313470000
+
+[props/cas_proxy/EXTRACT-status]
+access = read : [ * ], write : [ admin, power ]
+export = none
+owner = nobody
+version = 6.0.2
+modtime = 1395845907.922941000
+
+[props/cas_proxy/EXTRACT-uri]
+access = read : [ * ], write : [ admin, power ]
+export = none
+owner = nobody
+version = 6.0.2
+modtime = 1395845912.941057000
+
+[props/cas_proxy/EXTRACT-username]
+access = read : [ * ], write : [ admin, power ]
+export = none
+owner = nobody
+version = 6.0.2
+modtime = 1395845918.209666000
+
+[props/cas_proxy/EXTRACT-webhost]
+access = read : [ * ], write : [ admin, power ]
+export = none
+owner = nobody
+version = 6.0.2
+modtime = 1395845925.323997000
+
+[props/cas_proxy/EXTRACT-webmodule]
+access = read : [ * ], write : [ admin, power ]
+export = none
+owner = nobody
+version = 6.0.2
+modtime = 1395845929.624717000
+
+[props/cas_proxy/EXTRACT-webservice]
+access = read : [ * ], write : [ admin, power ]
+export = none
+owner = nobody
+version = 6.0.2
+modtime = 1395845933.452436000
+
+[props/cas_proxy/LOOKUP-service_lookup]
+access = read : [ * ], write : [ admin, power ]
+export = none
+owner = nobody
+version = 6.0.2
+modtime = 1395845936.947412000
+
+[eventgen]
+access = read : [ * ]
+export = system
+
+[inputs/monitor%3A%2F%2F%2FUsers%2Fsplunk%2Ftmp%2Fcas_proxy.log]
+owner = admin
+version = 6.0.2
+modtime = 1395849723.983328000
+
+[inputs/monitor%3A%2F%2F%2FUsers%2Fsplunk%2Ftmp%2Fcas.log]
+owner = admin
+version = 6.0.2
+modtime = 1395933669.087035000
+
+[savedsearches/Requests%20status%20over%20service%20operation]
+version = 6.2.0
+modtime = 1416166928.653619000
+
+[indexes/security]
+owner = admin
+version = 6.1.9
+modtime = 1447672388.414644000
+
+[inputs/monitor%3A%2F%2F%2Fopt%2Flog%2Fcas.log]
+owner = admin
+version = 6.1.9
+modtime = 1447674449.143521000
+
+[nav/default]
+version = 6.1.9
+modtime = 1447680981.496849000
+
+[savedsearches/User%20Sessions%20Report]
+access = read : [ * ], write : [ admin ]
+export = none
+owner = admin
+version = 6.1.9
+modtime = 1447680900.916342000
+
+[savedsearches/Internal%20Error]
+owner = admin
+version = 6.1.9
+modtime = 1447683355.900732000
+
+[views/service_details_dashboard]
+version = 6.1.9
+modtime = 1447685053.015864000
+
+[indexes/os]
+owner = admin
+version = 6.1.9
+modtime = 1447767653.939939000

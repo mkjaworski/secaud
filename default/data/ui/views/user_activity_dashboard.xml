@@ -1,0 +1,88 @@
+<?xml version='1.0' encoding='utf-8'?>
+<form>
+  <fieldset>
+    <input type="dropdown" token="scope">
+      <label>Scope</label>
+      <default>ALL</default>
+      <choice value="scope_external">External</choice> 
+      <choice value="scope_internal">Internal</choice>
+      <choice value="scope_all">ALL</choice>
+    </input>
+    <input type="time">
+      <default>Last 24 hours</default>
+    </input>
+  </fieldset>
+  <label>User Activity Dashboard</label>
+  <row>
+    <single>
+      <searchString>| savedsearch "Currently logged users" scope=$scope$</searchString>
+      <title>Currently logged users</title>
+      <option name="afterLabel">sessions in progress</option>
+    </single>
+    <chart>
+      <searchString>| savedsearch "Currently logged users by service" scope=$scope$</searchString>
+      <title>Currently logged users by service</title>
+      <option name="charting.chart">pie</option>
+    </chart>
+  </row>
+  <row>
+    <table>
+      <searchString>| savedsearch "User service utilization and errors" scope=$scope$</searchString>
+      <title>User service utilization and errors</title>
+      <option name="count">10</option>
+      <option name="displayRowNumbers">true</option>
+    </table>
+    <chart>
+      <searchString>| savedsearch "User authorization" scope=$scope$</searchString>
+      <title>User authorization</title>
+      <option name="charting.axisTitleX.text">time</option>
+      <option name="charting.axisTitleY.text">events</option>
+      <option name="charting.chart">area</option>
+      <option name="charting.chart.nullValueMode">zero</option>
+      <option name="charting.chart.stackMode">stacked</option>
+      <option name="charting.layout.splitSeries">false</option>
+      <option name="charting.legend.placement">right</option>
+      <option name="charting.primaryAxisTitle.text"/>
+      <option name="charting.secondaryAxisTitle.text"/>
+    </chart>
+  </row>
+  <row>
+    <chart>
+      <searchString>| savedsearch "Service module chart" scope=$scope$</searchString>
+      <title>Service module chart</title>
+      <option name="charting.chart">pie</option>
+    </chart>
+    <chart>
+      <searchString>| savedsearch "Top users by service chart" scope=$scope$</searchString>
+      <title>Top users by service chart</title>
+      <option name="charting.chart">bar</option>
+    </chart>
+  </row>
+  <row>
+    <table>
+      <searchString>| savedsearch "User daily activity" scope=$scope$</searchString>
+      <title>User daily activity</title>
+      <option name="count">10</option>
+      <option name="dataOverlayMode">heatmap</option>
+      <option name="displayRowNumbers">false</option>
+      <option name="drilldown">row</option>
+    </table>
+  </row>
+  <row>
+    <table>
+      <searchString>| savedsearch "Service module daily activity" scope=$scope$</searchString>
+      <title>Service module daily activity</title>
+      <option name="count">50</option>
+      <option name="dataOverlayMode">heatmap</option>
+      <option name="displayRowNumbers">true</option>
+    </table>
+  </row>
+  <row>
+    <table>
+      <searchString>| savedsearch "Granted tickets over time" scope=$scope$</searchString>
+      <title>Granted tickets over time</title>
+      <option name="count">10</option>
+      <option name="displayRowNumbers">false</option>
+    </table>
+  </row>
+</form>

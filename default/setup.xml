@@ -1,0 +1,44 @@
+<setup>
+  <block title="CAS Events Configuration" endpoint="admin/macros/" entity="casevents">
+    <text>Define a search tailoring initial CAS event stream</text>
+    <input field="definition">
+      <label>Event data search string</label>
+      <type>index=security sourcetype=cas</type>
+    </input>
+  </block>
+  <block title="CAS Proxy Events Configuration" endpoint="admin/macros/" entity="casproxyevents">
+    <text>Define a search tailoring initial CAS proxy event stream</text>
+    <input field="definition">
+      <label>Event data search string</label>
+      <type>index=security sourcetype=cas_proxy</type>
+    </input>
+  </block>
+  <block title="ModSecurity Events Configuration" endpoint="admin/macros/" entity="modsecevents">
+    <text>Define a search tailoring initial CAS proxy event stream</text>
+    <input field="definition">
+      <label>Event data search string</label>
+      <type>index=security sourcetype=mod_security</type>
+    </input>
+  </block>
+  <block title="Scope ALL" endpoint="admin/macros/" entity="scope_all">
+    <text>Define a search to limit analysis scope to all events (by default: *)</text>
+    <input field="definition">
+      <label>Event data search string</label>
+      <type>*</type>
+    </input>
+  </block>
+  <block title="Scope Internal" endpoint="admin/macros/" entity="scope_internal">
+    <text>Define a search to limit analysis scope to the events from internal network (eg. host=int*)</text>
+    <input field="definition">
+      <label>Event data search string</label>
+      <type>*</type>
+    </input>
+  </block>
+  <block title="Scope External" endpoint="admin/macros/" entity="scope_external">
+    <text>Define a search to limit analysis scope to the events from external network (eg. host=ext*)</text>
+    <input field="definition">
+      <label>Event data search string</label>
+      <type>*</type>
+    </input>
+  </block>
+</setup>

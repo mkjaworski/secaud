@@ -1,0 +1,11 @@
+2013-10-18 10:17:59,158 INFO [com.github.inspektr.audit.support.Slf4jLoggingAuditTrailManager] - Audit trail record BEGIN
+=============================================================
+WHO: [username: JA92373]
+WHAT: supplied credentials: [username: JA92373]
+ACTION: AUTHENTICATION_SUCCESS
+APPLICATION: CAS
+WHEN: Fri Oct 18 10:17:59 CEST 2013
+CLIENT IP ADDRESS: 192.168.111.166
+SERVER IP ADDRESS: 10.9.75.117
+=============================================================
+

@@ -1,0 +1,10 @@
+2013-10-18 10:17:58,738 INFO [com.github.inspektr.audit.support.Slf4jLoggingAuditTrailManager] - Audit trail record BEGIN
+=============================================================
+WHO: [username:  xxxxxxx@xxxxxx.pl]
+WHAT: TGT-169781-bInMPm4lVIRmQFQgddqWUfCo3mcgFeg0iNtpAMrSbwL35ffMtx-WALLF_SSO1
+ACTION: TICKET_GRANTING_TICKET_CREATED
+APPLICATION: CAS
+WHEN: Fri Oct 18 10:17:58 CEST 2013
+CLIENT IP ADDRESS: 192.168.111.166
+SERVER IP ADDRESS: 10.9.75.117
+=============================================================

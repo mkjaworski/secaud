@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='utf-8'?>
+<form>
+  <fieldset>
+    <input type="dropdown" token="scope">
+      <label>Scope</label>
+      <default>ALL</default>
+      <choice value="scope_external">External</choice> 
+      <choice value="scope_internal">Internal</choice>
+      <choice value="scope_all">ALL</choice>
+    </input>
+    <input type="time">
+      <default>Last 24 hours</default>
+    </input>
+  </fieldset>
+  <label>Service Details Dashboard</label>
+  <row>
+    <table>
+      <searchString>| savedsearch "Service errors chart" scope=$scope$</searchString>
+      <title>Service errors chart</title>
+      <option name="count">20</option>
+      <option name="displayRowNumbers">false</option>
+      <option name="drilldown">all</option>
+    </table>
+  </row>
+  <row>
+    <chart>
+      <searchString>| savedsearch "Errors by status" scope=$scope$</searchString>
+      <title>Errors by status</title>
+      <option name="charting.chart">pie</option>
+    </chart>
+    <chart>
+      <searchString>| savedsearch "Errors versus proper operations" scope=$scope$</searchString>
+      <title>Errors versus proper operations (%)</title>
+      <option name="charting.axisTitleX.text">time</option>
+      <option name="charting.axisTitleY.text">errors vs. proper</option>
+      <option name="charting.axisY.scale">log</option>
+      <option name="charting.chart">area</option>
+      <option name="charting.chart.nullValueMode">zero</option>
+      <option name="charting.chart.stackMode">stacked100</option>
+      <option name="charting.layout.splitSeries">false</option>
+      <option name="charting.legend.placement">bottom</option>
+      <option name="charting.primaryAxisTitle.text"/>
+      <option name="charting.secondaryAxis.scale">log</option>
+      <option name="charting.secondaryAxisTitle.text"></option>
+    </chart>
+  </row>
+  <row>
+    <table>
+      <searchString>| savedsearch "Requests status over service operation" scope=$scope$</searchString>
+      <title>Requests status over service operation</title>
+      <option name="count">20</option>
+      <option name="dataOverlayMode">heatmap</option>
+      <option name="displayRowNumbers">false</option>
+      <option name="drilldown">all</option>
+    </table>
+  </row>
+</form>

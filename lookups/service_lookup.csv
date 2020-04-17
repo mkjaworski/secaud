@@ -1,0 +1,5 @@
+uri,service_name
+.*/mdi/.*,MDI
+.*/sso.*,SSO
+.*/szkolenia/.*,Szkolenia
+.*,Some service
